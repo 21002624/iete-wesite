@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="membership.css">
+        <title>IETE-membership</title>
+        <link rel="stylesheet" href="footer.css">
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="sticky">
+            <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+                <li><a href="newsletter.html">Newsletter & Links</a> </li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+                <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+                
+            </ul>
+        </header>
+
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function()
+            {
+               const header = document.querySelector('header');
+               header.classList.toggle("sticky",window.scrollY > 0);
+            });
+
+            function toggleMenu()
+            {
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+       </script>
+
+       <div class="cards">
+        <h2 class="header">
+           Why join us?
+        </h2>
+        <p>IETE Student Forum arranges frequent meetings of student members together with experts / academic / R & D / industry leaders as well as IETE centre’s executive committee members. Programmers of common interest may also be arranged involving students forum at many institutions in a city, region etc. Students after completeing their degrees will become proud corporate members of IETE and can write after their name BE. AMIETE, with less fees (deducting the fee paid for the forum).</p>
+        <br>
+        <div class="services">
+           <div class="content content-1">
+              <h2>
+               MEMBERSHIP
+              </h2>
+              <p>
+               The IETE membership is available at different levels based on the applicants' academic qualifications and practical experience in electronics, telecommunications, computers, information technology and related areas. Applicants are invited to seek the highest membership grade they are qualified for. The membership categories are:
+              </p>
+              <a href="https://iete.org/index111.html" target="_blank">Read More</a>
+           </div>
+           <div class="content content-2">
+              <h2>
+               Corporate Members:
+              </h2>
+              <p>
+               <br>
+               1.Honorary fellow (HF) (elected),
+               <br>
+               2.Distinguished Fellow (DF) (elected),
+               <br>
+               3.Fellow (F),
+               <br>
+               4.Member (M),
+               <br>
+               5.Associate member (AM)
+               
+               
+               
+               <br>
+               Click here to learn more about the Eligibility Criteria and other details
+
+
+              </p>
+              <a href="https://iete.org/index111.html" target="_blank">Read More</a>
+           </div>
+           <div class="content content-3">
+              <h2>
+               Non-Corporate Members:
+              </h2>
+              <p>
+               6. Associate (A),
+               <br>
+               7. Organisational Member (ORG),
+               <br>
+               8. AMIETE Student (AMIETE),
+               <br>
+               9. DIPIETE Student (DipIETE),
+               <br>
+               10. Diploma Member (DipIETE Passout) (DIP)
+               
+              
+               Click here to learn more about the Eligibility Criteria and other details
+               
+               
+              </p>
+              <a href="https://iete.org/index111.html" target="_blank">Read More</a>
+           </div>
+
+           
+        </div>
+     </div>
+
+
+
+     <!----------------------------------------footer------------------------------------------------------------------------------->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                        Conran Smith Road Entrance Peters Road,
+                        Gopalapuram,Chennai,</p>
+                        <br>
+                        <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                        
+                        <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                        <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                        <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                        <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                      </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Courses available</h4>
+                    <ul>
+                        <li><a href="#">communication</a></li>
+                        <li><a href="#">telecomunication</a></li>
+                        <li><a href="#">engineering</a></li>
+                        <li><a href="#">institute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-akash">
+                © Copyright IETE Chennai. All Rights Reserved
+              </div>
+        </div>
+   </footer>
+
+       
+
+
+
+    </body>
+</html>

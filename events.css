@@ -1,0 +1,539 @@
+
+*
+{
+    margin: 0px;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+
+/*-----------------------------------------header---------------------------------------------------------------*/
+
+.logo-image{
+    width: 50px;
+    
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,05);
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;   
+}
+
+header.sticky .logo
+{
+    color: #111;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+header .logo span p{
+    font-size: 10px;
+    color: #000000;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a
+{
+     text-decoration: none;
+     color: #000000;
+     font-weight: 300;
+}
+
+header.sticky .navigation li a
+{
+    color: #111;
+}
+
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+@media (max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active 
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top:68px;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation 
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(close.png); 
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(menu.png);
+        background-size: 25px; 
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+}
+/*--------------------------------------------------------------section--------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 90px;
+  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  background: #e6e6e6b8;
+  transform: rotate(45deg);
+}
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+.card_image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+.card_content {
+  padding: 1.2rem;
+}
+
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+h2.card_title {
+    font-size: 1.3em;
+}
+body {
+  font-family:monospace;
+  background:#eee;
+}
+/*-------------------------------------------------------------------card-button-----------------------------------------------*/
+
+.button {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  border: 3px solid rgb(255, 239, 94);
+  background-color: rgb(255, 239, 94);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+}
+
+.text {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.arrow path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/*------------------------------------------------------------------footer------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.logo-image{
+    width: 50px;
+    
+}
+
+ /*--------------------------------------------------copyright---------------------------------------------*/
+
+ .copy-right-akash{
+  color: white;
+  padding-left: 15px;
+  padding-top: 40px;
+ }
+ /*-------------------------------------------------------webinar----------------------------------------------------*/
+ @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.web-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  user-select: none;
+}
+
+
+.web-card {
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  width: 800px;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ff9500;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+/*-------------------------------------------------------------competition---------------------------------------------------------*/
+/* Demo styles
+-------------------------------------------------------------- */
+
+
+
+
+/* The base styles for frame & steps
+-------------------------------------------------------------- */
+
+.auto-steps {
+  counter-reset: track;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+.auto-steps h3 {
+  line-height: 25px;
+  width: 100%;
+  position: relative;
+  color: #353535;
+}
+
+.auto-steps h3::before {
+  /* content */
+  content: "Track " counter( track, decimal);
+  counter-increment: track;
+  /* style */
+  background: #353535;
+  border: 5px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+  /* sizing */
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  margin-top: -20px;
+  /* mobile first postition */
+  float: left;
+}
+
+
+/* The larger viewport styles for frame & steps
+-------------------------------------------------------------- */
+
+@media ( min-width: 480px) {
+  .auto-steps h3::before {
+    position: absolute;
+    left: -70px;
+  }
+  .auto-steps {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+    max-width:90%;
+    position: relative;
+    margin: 40px auto;
+    border: 30px solid rgba(255, 255, 255, 0.25);
+    border-left-width: 90px;
+    background-clip: padding-box;
+  }
+}

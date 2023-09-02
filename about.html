@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <title>IETE-about</title>
+        
+    
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="sticky">
+            <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+                <li><a href="newsletter.html">Newsletter & Links</a> </li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+                <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+                
+            </ul>
+        </header>
+        <script type="text/javascript">
+          window.addEventListener('scroll',function()
+          {
+             const header = document.querySelector('header');
+             header.classList.toggle("sticky",window.scrollY > 0);
+          });
+  
+          function toggleMenu()
+          {
+             const menuToggle = document.querySelector('.menuToggle');
+             const navigation = document.querySelector('.navigation');
+             menuToggle.classList.toggle('active');
+             navigation.classList.toggle('active');
+          }
+         </script>
+
+
+        
+
+
+
+
+
+        <div class="box-container">
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Vision</h3>
+                  <p style="color: white;">“Reaching the un-reached and empowering the youth through Technical Education and Skill Development.”</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Vision</h3>
+                  <p style="color: white;">“Reaching the un-reached and empowering the youth through Technical Education and Skill Development.”</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Mission</h3>
+                  <p style="color: white;">“IAdvancement of Electronics, Telecommunication, Information Technology & other related disciplines to contribute in Nation’s Human Resource & Infrastructure Development through our Engineers.”</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Mission</h3>
+                  <p style="color: white;">“Advancement of Electronics, Telecommunication, Information Technology & other related disciplines to contribute in Nation’s Human Resource & Infrastructure Development through our Engineers.”</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center filter-" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Motives</h3>
+                  <p style="color: white;">IETE is helping it's students to learn and grow in the emerging field of Electronics and Telecommunication. One of the missions of IETE is to provide the best mode of studying a Btech degree programme.</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Motives</h3>
+                  <p style="color: white;">IETE is helping it's students to learn and grow in the emerging field of Electronics and Telecommunication. One of the missions of IETE is to provide the best mode of studying a Btech degree programme.</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+<!------------------------------------------------------------------about-content----------------------------------------------------->
+<div class="row">
+  <div class="co150">
+      <br>
+      <div class="imgBx">
+          <img src="about-img.jpg">
+      </div>
+  </div>
+  <div class="co150">
+      <h2 class="titletext"><span>IETEs</span> Chennai of Centre</h2>
+      <p>
+        Founded in 1953, the Institution of Electronics and Telecommunication Engineers (IETE) is a leading professional society. Its vision is to reach the unreached and empower the youth through Technical Education and Skill development with a Mission for Advancement of Electronics, Telecommunication, Information Technology & other related disciplines; to contribute in Nation's Human Resource & Infrastructure Development through our Engineers & Scientists. The Government of India, Ministry of Science and Technology, Department of Scientific & Industrial Research has recognized IETE as a Scientific and Industrial Research Organization (SIRO). The Institution has also been notified as an Educational Institution of National Eminence by the Government of India. IETE is governed by its elected Governing Council headed by an elected President. It has on its roll the Secretary General – the head of IETE Secretariat as Chief Executive. The Institution is managed through various Committees and Boards nominated by the Governing Council. The 63 Centers are spread all over India 02 abroad and are managed by respective Executive Committees. To keep pace with technological development and achieve the mission, it organizes conferences, conventions, symposia, seminars, workshops, publications and brain storming sessions for continued knowledge upgradation of its members.
+
+
+      </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  
+  <div class="co150">
+      <h2 class="titletext"><span>Chennai Center</span>.</h2>
+      <p>
+        Chennai Centre of IETE is committed to attain commanding heights and achieve the status of “Centre of Excellence” in Technical, Engineering & Management education by harnessing the best practices in educational innovation and through its concerted endeavors like quality teaching, industrial consultancy and training to the aspirants including corporate training.
+        <br><br>
+        The Centre assigns top priority to the basic need for ‘education transformation’ in keeping pace with time, and aims at to develop the highest quality of manpower to cater to the needs & expectations of industry, R&D and educational institutions, with higher degree of employability for today and tomorrow.
+      </p>
+  </div>
+  <div class="co150">
+    <br>
+    <div class="imgBx">
+        <img src="home-1.jpg">
+    </div>
+</div>
+  
+</div>
+<!-----------------------------------------------------------------count-region----------------------------------------------------------------->
+
+<!--------------------------------------------------------------college----------------------------------------------------------->
+<div class="college">
+  <h2 class="titletext"><span>LIST OF COLLEGES</span>.</h2>
+  <ol>
+    <li>
+      <p>
+        Sri Venkateswara College of Engineering, Sriperambadur
+      </p>
+    </li>
+    <li>
+      <p>
+        Panimalar Institute of Technology
+      </p>
+    </li>
+    <li>
+      <p>
+        Easwari Engineering College
+      </p>
+    </li>
+    
+    <br>
+    <br>
+    <li>
+      <p>
+        Veltech Multi Engineering College
+      </p>
+    </li>
+    <li>
+      <p>
+        SRM Institute of Science and Technology
+      </p>
+    </li>
+    <li>
+      <p>
+        Jeppiar Institute of Technology
+      </p>
+    </li>
+    
+    <br>
+    <br>
+    <li>
+      <p>
+        RMK College of Engineering and Technology
+      </p>
+    </li>
+    <li>
+      <p>
+        Velammal Engineering College
+      </p>
+    </li>
+    <li>
+      <p>
+        Velammal Engineering College
+      </p>
+    </li>
+    
+    <br>
+    <br>
+    <li>
+      <p>
+        Dr Rangarajan Dr Sakunthala Engg College
+      </p>
+    </li>
+    <li>
+      <p>
+        Saveetha Engineering College
+      </p>
+    </li>
+    <li>
+      <p>
+        Dr. M G R Educational & Research Institute
+      </p>
+    </li>
+
+    <br>
+    <br>
+    <li>
+      <p>
+        Dr. M G R Educational & Research Institute
+      </p>
+    </li>
+    <li>
+      <p>
+        DMI College of Engineering
+      </p>
+    </li>
+    <li>
+      <p>
+        MISRIMAL NAVAJEE MUNOTH JAIN ENGINEERING COLLEGE
+      </p>
+    </li>
+  </ol>
+</div>
+
+
+<!-----------------------------------------------footer--------------------------------------------------------------->
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                            Conran Smith Road Entrance Peters Road,
+                            Gopalapuram,Chennai,</p>
+                            <br>
+                            <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                            
+                            <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                          <li><a href="index.html">Home</a> </li>
+                          <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                          <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                          <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                          <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Courses available</h4>
+                        <ul>
+                            <li><a href="#">communication</a></li>
+                            <li><a href="#">telecomunication</a></li>
+                            <li><a href="#">engineering</a></li>
+                            <li><a href="#">institute</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right-akash">
+                  © Copyright IETE Chennai. All Rights Reserved
+                </div>
+            </div>
+       </footer>
+
+
+
+
+
+       
+
+
+
+
+
+
+
+    </body>
+</html>

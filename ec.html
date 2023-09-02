@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ec.css">
+        <title>IETE-executive committee</title>
+      
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="sticky">
+          <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+              <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+              <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+              <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+              <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+              <li><a href="newsletter.html">Newsletter & Links</a> </li>
+              <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+              <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+                
+            </ul>
+        </header>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function()
+            {
+               const header = document.querySelector('header');
+               header.classList.toggle("sticky",window.scrollY > 0);
+            });
+
+            function toggleMenu()
+            {
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+       </script>
+
+
+       <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="6.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+               
+                <div class="card__header-text">
+                  <h3 class="card__title">Dr.N.Venkateswaran</h3>
+                  <span class="card__status">Chairman</span>
+                </div>
+              </div>
+              <p class="card__description">
+                <span class="card__tagline">thulasi9840@gmail.comr</span>
+                Professor,Dept. of ECE Sri Siva Subramaniya Nadar College Of Engineering
+              </p>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="2.jpeg" class="card__image" alt="" />
+            <div class="card__overlay">        
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Dr. Tata Sudhakar</h3>
+                  
+                  <span class="card__status">Immd Post Chairman</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">thulasi9840@gmail.comr</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="3.webp" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+               
+                <div class="card__header-text">
+                  <h3 class="card__title">Mr. Shakthi Murugan</h3>
+                              
+                  <span class="card__status">Honarary Secretary</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">dvijendrababu@gmail.com</span>Assistant Professor / ECE
+                Jeppiaar Maamallan Engineering College</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="4.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Mrs T J Jeyaprabha</h3>
+                  
+                  <span class="card__status">Honarary Treasurer</span>
+                </div>          
+              </div>
+              <p class="card__description"><span class="card__tagline">jprabha@svce.ac.in</span>Assistant Professor / ECE
+                Sri Venkateswara College of Engineering</p>
+            </div>
+          </a>
+        </li>    
+      </ul>
+
+
+      <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="3.webp" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Dr C Udayakumar</h3>
+                              
+                  <span class="card__status">EC Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">cukumar@gmail.com</span>NO DETAILS</p>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="3.webp" class="card__image" alt="" />
+            <div class="card__overlay">        
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Dr V Thulasibai</h3>
+                  
+                  <span class="card__status">EC Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">thulasi9840@gmail.com</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="7.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Mr D Vijendrababu</h3>
+                              
+                  <span class="card__status">EC Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">dvijendrababu@gmail.com</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="3.webp" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                
+                <div class="card__header-text">
+                  <h3 class="card__title">Shri Ganapathy Suresh</h3>
+                  
+                  <span class="card__status">EC Member</span>
+                </div>          
+              </div>
+              <p class="card__description"><span class="card__tagline">lovechennai@yahoo.com</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>    
+      </ul>
+
+
+
+      <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="9.jpeg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+               
+                <div class="card__header-text">
+                  <h3 class="card__title">Shri S Arun Kumar</h3> 
+                             
+                  <span class="card__status">EC Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">arunsundar.s@cvrde.drdo.in</span>NO DETAILS</p>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="3.webp" class="card__image" alt="" />
+            <div class="card__overlay">        
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+              
+                <div class="card__header-text">
+                  <h3 class="card__title">Shri S Madivaanan</h3>
+                  
+                  <span class="card__status">EC Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">madivaanan.s@gmail.com</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="11.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+               
+                <div class="card__header-text">
+                  <h3 class="card__title">Dr Vaishali D</h3>
+                              
+                  <span class="card__status">Co-opted Member</span>
+                </div>
+              </div>
+              <p class="card__description"><span class="card__tagline">vaishali.b@vdp.srmuniv.ac.in</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="12.jpeg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+               
+                <div class="card__header-text">
+                  <h3 class="card__title">Mr Arun</h3>
+                  
+                  <span class="card__status">Co-opted Member</span>
+                </div>          
+              </div>
+              <p class="card__description"><span class="card__tagline">snatarajan1967@gmail.com</span>NO DETAILS</p>
+            </div>
+          </a>
+        </li>    
+      </ul>
+
+
+      <!----------------------------------------footer------------------------------------------------------------------------------->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                        Conran Smith Road Entrance Peters Road,
+                        Gopalapuram,Chennai,</p>
+                        <br>
+                        <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                        
+                        <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a> </li>
+                      <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                      <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                      <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                      <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Courses available</h4>
+                    <ul>
+                        <li><a href="#">communication</a></li>
+                        <li><a href="#">telecomunication</a></li>
+                        <li><a href="#">engineering</a></li>
+                        <li><a href="#">institute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-akash">
+              © Copyright IETE Chennai. All Rights Reserved
+            </div>
+        </div>
+   </footer>
+
+
+
+    </body>
+</html>

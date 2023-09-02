@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="chencon.css">
+        <title>IETE-membership</title>
+    
+        <link rel="stylesheet" href="../stylesheets/footer.css">
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="sticky">
+          <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+               <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+                <li><a href="newsletter.html">Newsletter & Links</a> </li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+                <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+                
+            </ul>
+        </header>
+
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function()
+            {
+               const header = document.querySelector('header');
+               header.classList.toggle("sticky",window.scrollY > 0);
+            });
+
+            function toggleMenu()
+            {
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+       </script>
+
+       <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Computer Organization and Architecture
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  04.11.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Artificial Intelligence
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  04.11.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Advanced Communication Engineering
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  04.11.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Networks and Systems Security
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  04.11.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Computational Electromagnetics
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  30.11.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Adaptive Signal Processing
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg">
+              </div>
+              <div class="ag-courses-item_title">
+                Computer Networks
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Wireless and Mobile Communication
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Start:
+                <span class="ag-courses-item_date">
+                  31.10.2022
+                </span>
+              </div>
+            </a>
+          </div>
+      
+        </div>
+      </div>
+
+
+      <!-------------------------------------------------------------footer----------------------------------------------------------------->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                        Conran Smith Road Entrance Peters Road,
+                        Gopalapuram,Chennai,</p>
+                        <br>
+                        <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                        
+                        <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a> </li>
+                      <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                      <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                      <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                      <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Courses available</h4>
+                    <ul>
+                        <li><a href="#">communication</a></li>
+                        <li><a href="#">telecomunication</a></li>
+                        <li><a href="#">engineering</a></li>
+                        <li><a href="#">institute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-akash">
+              © Copyright IETE Chennai. All Rights Reserved
+            </div>
+        </div>
+   </footer>
+
+
+       
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="newsletter.css">
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+
+
+
+        <header class="sticky">
+            <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+                <li><a href="newsletter.html">Newsletter & Links</a> </li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+                <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+            </ul>
+        </header>
+
+
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function()
+            {
+               const header = document.querySelector('header');
+               header.classList.toggle("sticky",window.scrollY > 0);
+            });
+
+            function toggleMenu()
+            {
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+       </script>
+
+
+
+    <section class="buttoon">
+      <div class="container">
+         <button class="btn btn1"><a href="http://www.ietechennai.in/chencon.html" style="color: white;" target="_blank">Chencon 2021</a></button>
+         <button class="btn btn2"><a href="http://www.ietechennai.in/chencon.html" style="color: white;" target="_blank">Chencon 2022</a></button>
+         <button class="btn btn3"><a href="http://www.ietechennai.in/chencon.html" style="color: white;" target="_blank">Chenlink Newsletter<br><br><p>Vol 1,No 3</p></a></button>
+         <button class="btn btn4"><a href="http://www.ietechennai.in/chencon.html" style="color: white;" target="_blank">Chenlink Newsletter<br><br><p>Vol 1,No 2</p></a></button>
+         <button class="btn btn4"><a href="http://www.ietechennai.in/chencon.html" style="color: white;" target="_blank">Chenlink Newsletter<br><br><p>Vol 1,No 1</p></a></button>
+       </div>
+
+    </section>
+
+<!----------------------------------------------------newsletter------------------------------------------->    
+
+ 
+<section class="wrapper">
+    <div class="content">
+
+      <section>
+        <h1>Join Our Newsletter</h1>
+        <p>
+            The Institution of Electronics and Telecommunication Engineers, Chennai
+        </p>
+      </section>
+      <footer>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </footer>
+    </div>
+  </section>
+
+
+
+        
+
+
+         <!----------------------------------------footer------------------------------------------------------------------------------->
+      <footer class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col">
+                     <h4>company</h4>
+                     <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                         Conran Smith Road Entrance Peters Road,
+                         Gopalapuram,Chennai,</p>
+                         <br>
+                         <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                         
+                         <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+                 </div>
+                 <div class="footer-col">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                        <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                        <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                        <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                      </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4>Courses available</h4>
+                     <ul>
+                         <li><a href="#">communication</a></li>
+                         <li><a href="#">telecomunication</a></li>
+                         <li><a href="#">engineering</a></li>
+                         <li><a href="#">institute</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4>follow us</h4>
+                     <div class="social-links">
+                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="copy-right-akash">
+                © Copyright IETE Chennai. All Rights Reserved
+              </div>
+         </div>
+    </footer>
+
+
+    
+    </body>
+</html>

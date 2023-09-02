@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IETE-Contact</title>
+        <link rel="stylesheet" href="contact.css">
+        <script src="contact.js"></script>
+        <script src="https://kit.fontawesome.com/ddbaf7ab73.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+        <header class="sticky">
+          <img class="logo-image" src="logo.png">
+            <a href="#" class="logo" style="color: black;">IETE<span>.</span></a>
+
+            <div class="menuToggle active" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+              <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+              <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+              <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+              <li><a href="chencon.html" onclick="toggleMenu();">Courses</a> </li>
+              <li><a href="newsletter.html">Newsletter & Links</a> </li>
+              <li><a href="contact.html" onclick="toggleMenu();">Contact</a> </li>
+              <li><a href="feedback.html" onclick="toggleMenu();">Feedback</a> </li>
+                
+            </ul>
+        </header>
+
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function()
+            {
+               const header = document.querySelector('header');
+               header.classList.toggle("sticky",window.scrollY > 0);
+            });
+
+            function toggleMenu()
+            {
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+       </script>
+
+       <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">IETE Chennai centre, No: 37,
+                Conran Smith Road Entrance Peters Road,
+                Gopalapuram,Chennai,</div>
+              <div class="text-two">Tamil Nadu 600086</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">044 2835 0773</div>
+              <div class="text-two">An Addition Number</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">ietechennai@gmail.com</div>
+              <div class="text-two">An Addition Email</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Contact us to know more</div>
+            <p>If you have any Queries or any information need to be known , feel free to contact us. It's our pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+                <input type="text" placeholder="write yuour message">
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+          </form>
+        </div>
+        </div>
+        <br><br>
+        <!---------------------------------------------map-------------------------------------------------------->
+        <p>Here is your Live Location to : The Institution of Electronics and
+            Telecommunication Engineers, Chennai</p>
+        <br>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7079565442136!2d80.25519397413886!3d13.054252113062725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52663edc820433%3A0x9d3202883a213b07!2sInstitute%20of%20Electronics%20and%20Telecommunication%20Engineers!5e0!3m2!1sen!2sin!4v1693360653988!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </div>
+      </div>
+       
+
+
+  <!----------------------------------------footer------------------------------------------------------------------------------->
+  <footer class="footer" style="margin-bottom: 0px;">
+    <div class="cont-foo">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <p style="color: #bbbbbb;">IETE Chennai centre, No: 37, Tamil Nadu 600086
+                    Conran Smith Road Entrance Peters Road,
+                    Gopalapuram,Chennai,</p>
+                    <br>
+                    <p style="color: #bbbbbb;">Phone: 044 2835 0773</p>
+                    
+                    <p style="color: #bbbbbb;">Email: ietechennai@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a> </li>
+                  <li><a href="about.html" onclick="toggleMenu();" >About</a> </li>
+                  <li><a href="ec.html" onclick="toggleMenu();">Executive Committee</a> </li>
+                  <li><a href="events.html" onclick="toggleMenu();">Events</a> </li>
+                  <li><a href="membership.html" onclick="toggleMenu();">Membership</a> </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Courses available</h4>
+                <ul>
+                    <li><a href="#">communication</a></li>
+                    <li><a href="#">telecomunication</a></li>
+                    <li><a href="#">engineering</a></li>
+                    <li><a href="#">institute</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-akash">
+          © Copyright IETE Chennai. All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+      
+
+       
+
+   
+    </body>
+</html>
